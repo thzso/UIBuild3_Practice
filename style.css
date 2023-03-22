@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300;1,400&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --light:  #eae9e4;
+  --dark: #1c1717
+} 
+
+body{
+  background-color: var(--light);
+  font-family: 'Roboto', sans-serif;
+}
+
+nav{
+  background-color: var(--dark);
+  color: var(--light);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+#container{
+display: flex;
+justify-content: center;
+}
+
+#card-container{
+  max-width: 1280px;
+  padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px 20px;
+  justify-content: center;
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: center; */
+}
+
+.cards{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.data{
+  border: 1px solid var(--dark);
+  width: 300px;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+}
+
+.sub-title-container{
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  gap: 5px;
+}
+.title{
+  font-size: larger;
+  font-weight: bolder;
+}
+.text-container {
+  background-color: var(--dark);
+  color: var(--light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.visit-container{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--light);
+  width: 300px;
+}
+.visit-container:hover, .visit-container:active{
+  border-bottom: 1px solid var(--dark);
+}
+
+@media screen and (min-width: 820px) {
+  .data {
+    width: 400px;;
+  }
+  .visit-container {
+    width: 400px;
+  }
+
+}
